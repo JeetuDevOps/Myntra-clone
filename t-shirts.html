@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirts</title>
+    <script src="https://kit.fontawesome.com/c4e502dbf0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Top.css">
+
+    <style>
+      #data {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-gap: 5%;
+            align-items: center;
+        }
+        
+         #data div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #btn{
+            display: block;
+        }
+        
+        .txt {
+            height: 42px;
+            color: #566770;
+            font-size: 16px;
+            text-align: left;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
+            line-height: 21px;
+        }
+
+        .prz {
+            font-size: 17px;
+            line-height: 0px;
+
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .myDIV:hover .hide {
+            display: block;
+            color: rgb(241, 234, 234);
+        }
+         h1{
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+
+    
+    <div id="top-box">
+    <div><a href="AfterLogin.html"><img id="logo" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"/></a></div>
+            <div class="basket-icons"> 
+
+                 <a href="card.html"><i class="fas fa-cart-plus fa-3x" id="check"></i></i></a>
+
+                 <a href="address.html"><i class="fas fa-address-card fa-3x" id="face"></i></a>
+
+
+            </div>
+            
+        </div>
+         <h1>Perfumes</h1>
+    <div id="data"></div>
+</body>
+</html>
+<script>
+
+
+//Fragrance for women
+const T_Shirts=[
+{
+    name:"Kook N Keech Marvel",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/8972451/2020/12/14/b52164c6-bed8-49ef-9974-eceb7ad3823f1607942574460-Kook-N-Keech-Marvel-Men-Black-Marvel-Printed-Round-Neck-T-sh-1.jpg",
+    price: "Rs. 329Rs. 599(45% OFF)",
+},{
+    name:"Roadster-Men White Solid Round Neck T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2275365/2019/9/10/4f24f563-c764-4f27-9fc5-9ad3dcf167621568108715062-Roadster-Men-White-Solid-Round-Neck-T-shirt-1641568108713591-1.jpg",
+    price: "Rs. 209Rs. 299(30% OFF)",
+},
+{
+    name:"DILLINGER-Men Navy Blue & Red Striped Round Neck T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/11067734/2019/12/10/34b589c2-80b9-4ad9-81ea-84333fbc46761575972548055-DILLINGER-Men-Tshirts-4071575972546110-1.jpg",
+    price: "Rs. 539Rs. 1199(55% OFF)",
+},
+{
+    name:"Campus Sutra-Men Blue Colourblocked Round Neck T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10016983/2019/6/20/b5caaca7-b5e8-4134-9283-65473a2388031561026348090-Campus-Sutra-Men-Blue-Colourblocked-Round-Neck-T-shirt-99915-1.jpg",
+    price: "Rs. 427Rs. 949(55% OFF)",
+},
+{
+    name:"Moda Rapido-Men White Printed Round Neck T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2221324/2017/11/23/11511442589002-Moda-Rapido-Men-White-Printed-Round-Neck-T-shirt-9601511442588767-1.jpg",
+    price: "Rs. 382Rs. 849(55% OFF)",
+},
+{
+    name:"Urbano Fashion-Men Teal Green Slim Fit Tropical Printed Round Neck T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg",
+    price: "Rs. 483Rs. 1099(56% OFF)",
+},
+{
+    name:"Roadster-Men Black Printed Round Neck T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/8938905/2019/4/22/87f43813-3f79-44c6-b24f-10bb2f546ce61555939169332-Roadster-Men-Black-Printed-Round-Neck-T-shirt-22215559391680-1.jpg",
+    price: "Rs. 399Rs. 799(50% OFF)",
+},
+{
+    name:"Nautica-Men White & Navy Blue Colourblocked T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13802434/2021/7/19/39c3ba48-b310-4ffa-be96-7e8c6335cff81626671633799-Nautica-Men-Tshirts-451626671633420-1.jpg",
+    price: "Rs. 779Rs. 1299(40% OFF)",
+},
+{
+    name:"HRX by Hrithik Roshan-Men Teal Blue Printed Round Neck Athleisure T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/6825458/2018/9/24/35fce325-de30-4c53-9f9e-226601f27ac01537788226072-HRX-by-Hrithik-Roshan-Men-Tshirts-2271537788225288-1.jpg",
+    price: "Rs. 489Rs. 699(30% OFF)",
+},
+{
+    name:"Roadster-Men Navy Blue Printed Round Neck T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/9329623/2019/5/3/cc23af5a-e95f-4d0d-accc-5d32db57026f1556863519870-Roadster-Men-Navy-Blue-Printed-Round-Neck-T-shirt-6311556863-1.jpg",
+    price: "Rs. 454Rs. 699(35% OFF)",
+},
+{
+    name:"HERE&NOW-Men Mauve & Black olourblocked Round Neck T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/8879269/2019/3/6/719f6f6d-f10f-41c9-97dd-3332808459b61551877361639-HERENOW-Men-Mauve-Printed-Round-Neck-T-shirt-324155187736060-1.jpg",
+    price: "Rs. 449Rs. 899(50% OFF)",
+},
+{
+    name:"Mast & Harbour-Men Off-White Striped Polo Collar T-shirt",
+    image:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4149427/2019/1/23/71835815-7adf-4adc-be83-4d88addf33771548237070307-Mast--Harbour-Men-Off-White-Striped-Polo-Collar-T-shirt-3051-1.jpg",
+    price: "Rs. 649Rs. 1299(50% OFF)",
+},
+
+];
+    const perfumes_json = JSON.stringify(perfumes_men);
+
+    localStorage.setItem("women_perfume", perfumes_json);
+
+    let women_perfume = localStorage.getItem("women_perfume");
+women_perfume = JSON.parse(women_perfume);
+
+    function viewPerfumes() {
+        console.log(women_perfume);
+        let data = document.getElementById("data");
+
+       women_perfume.forEach(function (product) {
+            let div = document.createElement("div");
+            div.setAttribute("class", "myDIV")
+            let name = document.createElement("p");
+            name.innerText = product.name;
+            name.setAttribute("class", "txt")
+
+            let price = document.createElement("p");
+            price.innerText = product.price;
+            let image = document.createElement("img");
+            price.setAttribute("class", "prz")
+            image.src = product.image;
+
+            
+            let rating = document.createElement("p");
+            rating.innerText = product.rating;
+            rating.style.color = "red"
+            rating.style.float = "right"
+            rating.style.backgroundColor = "green"
+
+
+            let btn = document.createElement("button");
+            btn.innerText = "Add to cart"
+            btn.style.width = "100%"
+            btn.style.height = "40px"
+            btn.style.backgroundColor = "#004d40"
+            btn.style.fontSize = "25px"
+            btn.style.cursor="pointer"
+            btn.setAttribute("class", "hide")
+            btn.onclick = function () {
+                addtoCard(product);
+            }
+            name.append(price)
+            price.append(rating)
+            div.append(image, btn, name);
+            data.append(div);
+        });
+    }
+
+
+viewPerfumes();
+    if (localStorage.getItem("card") === null) {
+        localStorage.setItem("card", JSON.stringify([]));
+    }
+
+
+   var cardtemp=[];
+    function addtoCard(p) {
+
+
+        let card_data = JSON.parse(localStorage.getItem("card"));
+        
+        for(key in card_data){
+            cardtemp.push(card_data[key].name);
+        }
+        if(cardtemp.indexOf(p.name)  != -1){
+            
+        }else{
+            card_data.push(p);
+        }
+        localStorage.setItem("card", JSON.stringify(card_data));
+
+    }
+    </script>
