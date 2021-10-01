@@ -152,10 +152,23 @@ margin-left: 15px;
  font-size: 10px;
     font-family: monospace;
     font-weight: bolder;
-    text-align: center;
+    
+    align-items: center;
     
 
 }
+#pro>a>img{
+    height: 20px;
+width: 20px;
+margin-left: 8px;
+margin-top: 10px;
+ font-size: 10px;
+    font-family: monospace;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
 #wish{
 height: 50px;
 width: 40px;
@@ -189,6 +202,79 @@ font-size: 10px;
     margin-top: 10px;
     margin-bottom: 3px;
 }
+.popup .overlay{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0,0,0,0.7);
+			z-index: 1;
+			display: none;
+		}
+
+		.popup .content {
+			position: absolute;
+			top: 20%;
+			left: 90%;
+			transform: translate(-50%,-50%) scale(0);
+			background: #fff;
+			width: 200px;
+			height: 200px;
+			
+			
+			padding: 20px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			box-shadow: 0 0 40px 20px rgba(0,0,0,0.1);
+		}
+
+		.popup.active .overlay{
+			display: blok;
+		}
+
+		.popup.active .content{
+			transition: all 300ms ease-in-out;
+			transform: translate(-50%, -50%) scale(1);
+		}
+
+		.popup.close-btn{
+			cursor: pointer;
+			position: absolute;
+			right: 20px;
+			width: 30px;
+			height: 30px;
+			background: #222;
+			color: #fff;
+			font-size: 25px;
+			margin-top: 120px;
+			text-align: center;
+			border-radius: 50%;
+		}
+
+		
+
+		#centr{
+			margin-top: 100px;
+
+		}
+
+		#data a{
+			display: flex;
+			flex-direction: column;
+			font-size: 12px;
+			line-height: 30px;
+			cursor: pointer;
+		}
+		#signin{
+			width: 100%;
+			background-color: #E91E63;
+			color: white;
+			padding: 5px;
+			cursor: pointer;
+		}
+
 
     
     
@@ -208,8 +294,9 @@ font-size: 10px;
 </div>
 <div id="user_logo">
     <div id="pro">
-    <img src="https://image.flaticon.com/icons/png/512/20/20079.png"/>
+  <a href="signup.html"  onmouseover="new1()">   <img src="https://image.flaticon.com/icons/png/512/20/20079.png"/></a>
     Profile
+    <a href="#" id="face" onmouseover="new1()"><i class="far fa-smile fa-3x" id="face"></i></i></a>
 </div>
 <div id="wish">
     <img src="https://cdn0.iconfinder.com/data/icons/squared-line-ecommerce-1/64/heart-512.png"/>
@@ -244,6 +331,35 @@ Wishlist
  <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/26/106e7449-b447-4952-a11a-f8f70a14fbbd1632664468241-footwear--1-.jpg"/>
  <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/9/26/c0fb1213-aefd-4729-8632-add01b6681821632664468232-watches.jpg"/>
 </div>
+<div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content" id="centr">
+        <!--<div class="close-btn">&times;</div> -->
+
+
+        <div id="data">
+
+
+
+
+            <button id="signin"><a href="signup.html" id="butt">Sign in</a></button>
+            <a href="signup.html">New customer? start here.</a>
+            <a>Your orders</a>
+            <a>Your account</a>
+            <a href="card.html">Your wishlist</a>
+
+        </div>
+    </div>
+</div>
+
     
 </body>
+
 </html>
+<script>
+    function new1() {
+		document.getElementById("popup-1").classList.toggle("active");
+
+	}
+
+</script>
